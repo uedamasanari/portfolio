@@ -112,7 +112,7 @@ p{
         position: relative;
          margin: auto;
          text-align: center;
-         width: 399px;
+         width: auto;
        }
     .lang{
         padding: 0.5em 1em;
