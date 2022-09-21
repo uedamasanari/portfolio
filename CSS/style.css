@@ -3,17 +3,14 @@ p{
     font-family:'メイリオ';
     font-weight: bold;
 }
+.update{
+    text-align: right;
+}
 .img{
     width: 100px;
     height: 100px;
     margin: auto;
 }
-h2 {
-    position: relative;
-     margin: auto;
-     text-align: center;
-     width: 400px;
-   }
    
    h2:before,
    h2:after {
@@ -111,6 +108,12 @@ h2 {
     overflow: auto;
 }
 @media screen and (max-width:399px) {
+    h2 {
+        position: relative;
+         margin: auto;
+         text-align: center;
+         width: 399px;
+       }
     .lang{
         padding: 0.5em 1em;
         margin: 2em 0;
@@ -200,6 +203,12 @@ h2 {
     }
 }
 @media (min-width:400px){
+    h2 {
+        position: relative;
+         margin: auto;
+         text-align: center;
+         width: 400px;
+       }
     .lang{
         padding: 0.5em 1em;
         margin: 2em 0;
