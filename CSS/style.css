@@ -3,6 +3,9 @@ p{
     font-family:'メイリオ';
     font-weight: bold;
 }
+.new{
+    color:red;
+}
 .update{
     text-align: right;
 }
@@ -299,6 +302,14 @@ p{
     }
 }
 .history{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #4ec4d3;
+    text-align: center;
+    height: 200px;
+    overflow: auto;
+}
+.updatehistory{
     padding: 0.5em 1em;
     margin: 2em 0;
     border: double 5px #4ec4d3;
