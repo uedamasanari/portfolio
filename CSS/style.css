@@ -4,6 +4,11 @@ p {
     font-weight: bold;
 }
 
+.center {
+    text-align: center;
+
+}
+
 .new {
     color: red;
 }
