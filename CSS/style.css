@@ -1,378 +1,359 @@
-p {
-    border-bottom: dotted 2px #87CEFA;
-    font-family: 'メイリオ';
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #fafafa;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+    color: #1a237e;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.nav-modern {
+    background-color: rgba(26, 35, 126, 0.9);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-modern .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-modern .logo {
+    font-size: 1.5rem;
     font-weight: bold;
+    color: #ffffff;
 }
 
-.center {
-    text-align: center;
-
+.nav-modern ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
 }
 
-.new {
-    color: red;
+.nav-modern ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.update {
-    text-align: right;
+.nav-modern ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.img {
-    width: 100px;
-    height: 100px;
-    margin: auto;
-}
-
-.br {
-    display: none;
-}
-
-h2:before,
-h2:after {
-    position: absolute;
-    z-index: 0;
-    bottom: -10px;
-    display: block;
-    content: '';
-    border: 1em solid #06d9ce;
-}
-
-h2:before {
-    left: -30px;
-    border-left-width: 15px;
-    border-left-color: transparent;
-}
-
-h2:after {
-    right: -30px;
-    border-right-width: 15px;
-    border-right-color: transparent;
-}
-
-h2 span {
+/* Hero section */
+.hero {
     position: relative;
-    z-index: 1;
-    display: block;
-    padding: 1rem 2rem;
-    color: rgb(0, 0, 0);
-    background: #41f1fa;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #1a237e;
+    color: #ffffff;
 }
 
-h2 span:before,
-h2 span:after {
+#hero-canvas {
     position: absolute;
-    bottom: -10px;
-    display: block;
-    width: 10px;
-    height: 10px;
-    content: '';
-    border-style: solid;
-    border-color: #05a8b7 transparent transparent transparent;
-}
-
-h2 span:before {
-    left: 0;
-    border-width: 10px 0 0 10px;
-}
-
-h2 span:after {
-    right: 0;
-    border-width: 10px 10px 0 0;
-}
-
-.gap {
-    height: 50px;
-}
-
-.logo {
-    position: relative;
-    padding: 1rem .5rem;
-    text-align: center;
-}
-
-.logo:before,
-.logo:after {
-    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero h1, .hero h2 {
+    color: #e0f7fa; /* 明るい青みがかった白色 */
+    text-shadow: 
+        0 0 10px rgba(224, 247, 250, 0.7),
+        0 0 20px rgba(224, 247, 250, 0.5),
+        0 0 30px rgba(224, 247, 250, 0.3),
+        0 0 40px rgba(224, 247, 250, 0.1);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* About section */
+.about {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills section */
+.skills {
+    padding: 100px 0;
+    background-color: #f0f0f0;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.skill-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item h3 {
+    margin-bottom: 10px;
+    color: #1a237e;
+}
+
+.skill-meter {
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.skill-meter::before {
     content: '';
-    background-image: -webkit-gradient(linear, right top, left top, from(#30cfd0), to(#330867));
-    background-image: -webkit-linear-gradient(right, #30cfd0 0%, #330867 100%);
-    background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
-}
-
-.logo:before {
+    position: absolute;
     top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: repeating-linear-gradient(
+        to right,
+        #e0e0e0,
+        #e0e0e0 19%,
+        #ffffff 19%,
+        #ffffff 20%
+    );
+    z-index: 1;
 }
 
-.logo:after {
-    bottom: 0;
+.skill-level {
+    height: 100%;
+    background-color: #ffd600;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+    position: relative;
+    z-index: 2;
 }
 
-.profile {
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    border: double 5px #4ec4d3;
+.skill-level[data-level="0"] { --skill-width: 0; }
+.skill-level[data-level="1"] { --skill-width: 20%; }
+.skill-level[data-level="2"] { --skill-width: 40%; }
+.skill-level[data-level="3"] { --skill-width: 60%; }
+.skill-level[data-level="4"] { --skill-width: 80%; }
+.skill-level[data-level="5"] { --skill-width: 100%; }
+
+@keyframes fillSkill {
+    from { width: 0; }
+    to { width: var(--skill-width); }
+}
+
+.skill-level {
+    animation: fillSkill 1s ease-in-out forwards;
+}
+
+.skill-score {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Projects section */
+.projects {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+/* Certifications section */
+.certifications {
+    padding: 100px 0;
+    background-color: #f0f0f0;
+}
+
+/* Activities section */
+.activities {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+/* Scrollable sections */
+.scrollable-section {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scrollable-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-section::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scrollable-section::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.scrollable-section::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Projects, Certifications, and Activities items */
+.project-item, .cert-item, .activity-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover, .cert-item:hover, .activity-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3, .cert-item h3, .activity-item h3 {
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+.project-item p, .cert-item p, .activity-item p {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
     text-align: center;
+    padding: 20px 0;
 }
 
-.appeal {
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    border: double 5px #4ec4d3;
-    text-align: center;
-    height: 200px;
-    overflow: auto;
-}
-
-@media screen and (max-width:399px) {
-    h2 {
-        position: relative;
-        margin: auto;
-        text-align: center;
-        width: auto;
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-modern ul {
+        display: none; /* Hide navigation links on small screens */
     }
 
-    .br {
-        display: block;
+    .nav-modern .container {
+        justify-content: center; /* Center the logo on small screens */
     }
 
-    .lang {
-        padding: 0.5em 1em;
-        margin: 2em 0;
-        border: double 5px #4ec4d3;
-        text-align: center;
-        height: 450px;
-        overflow: auto;
-        grid-template-rows: 50px 50px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
-        grid-template-columns: 50%;
+    .about-content {
+        flex-direction: column;
     }
 
-    #lang {
-        grid-row: 1 / 2;
-        grid-column: 1 / 3;
-        text-align: center;
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 30px;
     }
 
-    #ex {
-        grid-row: 2 / 3;
-        grid-column: 1 / 3;
-        text-align: center;
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    #html {
-        grid-row: 3 / 4;
-        grid-column: 1 / 2;
+    .hero h1 {
+        font-size: 4rem;
     }
 
-    #css {
-        grid-row: 4 / 5;
-        grid-column: 1 / 2;
-    }
-
-    #js {
-        grid-row: 5 / 6;
-        grid-column: 1 / 2;
-    }
-
-    #java {
-        grid-row: 6 / 7;
-        grid-column: 1 / 2;
-    }
-
-    #sql {
-        grid-row: 7 / 8;
-        grid-column: 1 / 2;
-    }
-
-    #php {
-        grid-row: 8 / 9;
-        grid-column: 1 / 2;
-    }
-
-    #python {
-        grid-row: 9 / 10;
-        grid-column: 1 / 2;
-    }
-
-    #go {
-        grid-row: 10 / 11;
-        grid-column: 1 / 2;
-    }
-
-    /* framework */
-
-    #github {
-        grid-row: 11 / 12;
-        grid-column: 1 / 2;
-    }
-
-    #bootstrap {
-        grid-row: 12 / 13;
-        grid-column: 1 / 2;
-    }
-
-    #vue {
-        grid-row: 13 / 14;
-        grid-column: 1 / 2;
-    }
-
-    #react {
-        grid-row: 14 / 15;
-        grid-column: 1 / 2;
-    }
-
-    #springboot {
-        grid-row: 15 / 16;
-        grid-column: 1 / 2;
-    }
-
-    #laravel {
-        grid-row: 16 / 17;
-        grid-column: 1 / 2;
-    }
-
-    #fastapi {
-        grid-row: 17 / 18;
-        grid-column: 1 / 2;
-    }
-
-    #flask {
-        grid-row: 18 / 19;
-        grid-column: 1 / 2;
+    .hero h2 {
+        font-size: 2rem;
     }
 }
 
-@media (min-width:400px) {
-    h2 {
-        position: relative;
-        margin: auto;
-        text-align: center;
-        width: 400px;
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
     }
 
-    .lang {
-        padding: 0.5em 1em;
-        margin: 2em 0;
-        border: double 5px #4ec4d3;
-        text-align: center;
-        height: 450px;
-        overflow: auto;
-        display: grid;
-        grid-template-rows: 50px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
-        grid-template-columns: 50% 50%;
+    section {
+        padding: 50px 0;
     }
 
-    #lang {
-        grid-row: 1 / 2;
-        grid-column: 1 / 3;
-        text-align: center;
+    .hero h1 {
+        font-size: 3rem;
     }
 
-    #ex {
-        grid-row: 2 / 3;
-        grid-column: 1 / 3;
-        text-align: center;
+    .hero h2 {
+        font-size: 1.5rem;
     }
 
-    #html {
-        grid-row: 3 / 4;
-        grid-column: 1 / 2;
+    .skill-grid {
+        grid-template-columns: 1fr;
     }
-
-    #css {
-        grid-row: 4 / 5;
-        grid-column: 1 / 2;
-    }
-
-    #js {
-        grid-row: 5 / 6;
-        grid-column: 1 / 2;
-    }
-
-    #java {
-        grid-row: 6 / 7;
-        grid-column: 1 / 2;
-    }
-
-    #sql {
-        grid-row: 7 / 8;
-        grid-column: 1 / 2;
-    }
-
-    #php {
-        grid-row: 8 / 9;
-        grid-column: 1 / 2;
-    }
-
-    #python {
-        grid-row: 9 / 10;
-        grid-column: 1 / 2;
-    }
-
-    #go {
-        grid-row: 10 / 11;
-        grid-column: 1 / 2;
-    }
-
-    /* framework */
-
-    #github {
-        grid-row: 3 / 4;
-        grid-column: 2 / 3;
-    }
-
-    #bootstrap {
-        grid-row: 4 / 5;
-        grid-column: 2 / 3;
-    }
-
-    #vue {
-        grid-row: 5 / 6;
-        grid-column: 2 / 3;
-    }
-
-    #react {
-        grid-row: 6 / 7;
-        grid-column: 2 / 3;
-    }
-
-    #springboot {
-        grid-row: 7 / 8;
-        grid-column: 2 / 3;
-    }
-
-    #laravel {
-        grid-row: 8 / 9;
-        grid-column: 2 / 3;
-    }
-
-    #fastapi {
-        grid-row: 9 / 10;
-        grid-column: 2 / 3;
-    }
-
-    #flask {
-        grid-row: 10 / 11;
-        grid-column: 2 / 3;
-    }
-}
-
-.history {
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    border: double 5px #4ec4d3;
-    text-align: center;
-    height: 200px;
-    overflow: auto;
-}
-
-.updatehistory {
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    border: double 5px #4ec4d3;
-    text-align: center;
-    height: 200px;
-    overflow: auto;
 }

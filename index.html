@@ -1,254 +1,474 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>portfolio</title>
+    <title>上田匡成 - エンジニアポートフォリオ</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="logo">
-            <h1>My portfolio</h1>
+    <nav class="nav-modern"> <!-- または nav-gradient, nav-boxed -->
+        <div class="container">
+            <div class="logo">上田匡成</div>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">プロフィール</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#projects">プロジェクト</a></li>
+                <li><a href="#certifications">資格・賞歴</a></li>
+                <li><a href="#activities">活動実績</a></li>
+            </ul>
         </div>
-        <div class="update">
-            最終更新：2023年7月1日
-        </div>
-        <div class="gap"></div>
-        <h2><span>プロフィール</span></h2>
-        <div class="profile">
-            <p>麻生情報ビジネス専門学校福岡校　3年生(2023年度 現在)</p>
-            <p>名前：上田　匡成</p>
-            <p><a class="new">new!</a>所属団体：STECH 代表　<a target="_blank"
-                    href="https://stech.careerselect.jp/">https://stech.careerselect.jp/</a></p>
-            <p>趣味：開発・ドラム・野球観戦・ゲーム</p>
-            <p>自己紹介：開発が楽しくてやめられない上田です。ハッカソンやインターンなど持ち前の行動力を活かして活動中です。まだまだ技術的に足りないところだらけですが、自ら外に出て交流したり技術を習得したりしてどんどん成長していきます。
-            </p>
-        </div>
-        <div class="gap"></div>
-        <h2><span>外部リンク</span></h2>
-        <div class="profile">
-            <p>Twitter : <a target="_blank" href="https://twitter.com/kyuriosuen">https://twitter.com/kyuriosuen</a></p>
-            <p>github : <a target="_blank" href="https://github.com/uedamasanari">https://github.com/uedamasanari</a>
-            </p>
-            <p>Qiita : <a target="_blank" href="https://qiita.com/kyuriosu">https://qiita.com/kyuriosu</a></p>
-            <p>IT~InfinityTower~(技育展最優秀賞) : <a target="_blank"
-                    href="https://infinitytower.sakura.ne.jp/">https://infinitytower.sakura.ne.jp/</a></p>
-            <p>CssLabo(福岡EDDハッカソン): <a target="_blank" href="https://protopedia.net/prototype/3431">作品はこちら</a></p>
-            <p>♡のカレンダー：<a target="_blank" href="https://strong-toffee-42101a.netlify.app/">作品はこちら</a></p>
-            <p>やにめもりー(技育CAMP努力賞・技育CAMPアドバンス企業賞)：<a target="_blank" href="https://zingy-profiterole-accecf.netlify.app/">作品はこちら</a></p>
-            <p>Black Boss(HTML5アワード技術賞)：<a target="_blank" href="https://zingy-profiterole-accecf.netlify.app/">作品はこちら</a></p>
-            <p>TODOコネクト：<a target="_blank" href="https://candid-zuccutto-3151b7.netlify.app/">作品はこちら</a></p>
-            <p>コードコネクト：<a target="_blank" href="https://twitter.com/geek_pjt/status/1639931058065121282?s=20">作品情報はこちら</a></p>
-            <p>あなたもメロス：<a target="_blank" href="https://matiawaseapp.vercel.app/map">作品情報はこちら</a></p>
-            <p>支援金Navi：<a target="_blank" href="https://my-shienkin-navi-67cc2.web.app/">作品情報はこちら</a></p>
-            <p>博多フリッパー：<a target="_blank" href="http://learning-sql.kikirara.jp/start.html">作品情報はこちら</a></p>
-        </div>
-        <div class="gap"></div>
-        <h2><span>資格・賞歴</span></h2>
-        <div class="center">※スクロールできます</div>
-        <div class="appeal">
-            <p><a class="new">new!</a>2023年6月24日 : 技育CAMPアドバンスvol.2　企業賞「DeNA賞」受賞<br><a target="_blank"
-                href="https://matiawaseapp.vercel.app/map">作品情報はこちら</a><span>　</span><span
-                class="br"><br></span></p>
-            <p><a class="new">new!</a>2023年6月7日 ~ 6月30日 : サイバーエージェントJOB型インターン　所属：CAM<br><span>　</span><span
-                class="br"><br></span></p>
-            <p><a class="new">new!</a>2023年6月4日 : 技育CAMP vol.4　企業賞「エン・ジャパン賞」　受賞<br><a target="_blank"
-                href="">作品情報はこちら</a><span>　</span><span
-                class="br"><br></span></p>
-            <p><a class="new">new!</a>2023年6月3日 : 起業イベント「荒波」で企業賞「CUEBiC賞」受賞<br><a target="_blank"
-                href="">作品情報はこちら</a><span>　</span><span
-                class="br"><br></span></p>
-            <p><a class="new">new!</a>2023年5月21日 : マイナポータルハッカソン第1次予選通過<br><a target="_blank"
-                href="">イベント概要はこちら</a><span>　</span><span
-                class="br"><br></span></p>
-                <!-- TODO:マイナポータルのリンクを追加する -->
-            <p><a class="new">new!</a>2023年4月15日 : 技育CAMP vol.2　努力賞　受賞<br><a target="_blank"
-                href="https://matiawaseapp.vercel.app/map">作品情報はこちら：あなたもメロス</a><span>　</span><span
-                class="br"><br></span></p>
-            <p>2023年3月26日 : 技育CAMP vol.1　努力賞　受賞<br><a target="_blank"
-                href="https://twitter.com/geek_pjt/status/1639931058065121282?s=20">作品情報はこちら：コードコネクト</a><span>　</span><span
-                class="br"><br></span></p>
-            <p>2023年3月4日 : 技育CAMPアドバンス vol.1　企業賞　受賞<br><a target="_blank"
-                href="https://zingy-profiterole-accecf.netlify.app/">作品はこちら：やにめもりー</a><span>　</span><span
-                class="br"><br></span><a
-                href="https://qiita.com/kyuriosu/items/b974e40b12d7869646ca">議事録はこちら</a></p>
-            <p>2023年2月10日 : 校内Atcoderプログラミングコンテスト １位</p>
-            <p>2023年2月1日 : HTML5アワード　技術賞　受賞<br><a target="_blank"
-                href="https://warm-puppy-2c306b.netlify.app/">作品はこちら：Black BOSS</a><span>　</span><span
-                class="br"><br></span><a
-                href="https://qiita.com/kyuriosu/items/62de9b4647188fcafd5a">議事録はこちら</a></p>
-            <p>2023年1月29日 : 技育CAMP　努力賞　受賞<br><a target="_blank"
-                href="https://zingy-profiterole-accecf.netlify.app/">作品はこちら：やにめもりー</a><span>　</span><span
-                class="br"><br></span><a
-                href="https://qiita.com/kyuriosu/items/037c4008bb32d1d296df">議事録はこちら</a></p>
-            <p>2022年8月 : STECH クリスマスハッカソン　優勝<br><a target="_blank"
-                href="https://zingy-profiterole-accecf.netlify.app/">githubはこちら</a></p>
-            <p><a class="new">appeal!</a>2022年9月23日 : 技育展　開発経験１年未満部門　最優秀賞　受賞<br><a target="_blank"
-                    href="https://infinitytower.sakura.ne.jp/">作品はこちら：InfinityTower</a><span>　</span><span
-                    class="br"><br></span><a
-                    href="https://qiita.com/kyuriosu/items/b974e40b12d7869646ca">議事録はこちら</a></p>
-            <p>2022年8月 : 技育展　予選通過</p>
-            <p>2022年8月 : Javaプログラミング能力認定試験2級　合格</p>
-            <p>2022年7月 : 校内SQLスキルコンテスト　学年1位</p>
-            <p>2022年4月 : 応用情報技術者試験　合格</p>
-            <p>2022年1月 : HTML5アワード　アシアル賞　受賞<br><a target="_blank" href="https://infinitytower.sakura.ne.jp/">作品はこちら</a>
-            </p>
-        </div>
-        <div class="gap"></div>
-        <h2><span>言語・フレームワーク</span></h2>
-        <div class="lang">
-            <div id="lang">
+    </nav>
 
+    <main>
+        <section id="home" class="hero">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-content">
+                <h1>上田匡成</h1>
+                <h2>Webエンジニア・Devesion CEO</h2>
             </div>
-            <div id="ex">
-                <p>勉強予定の物も記載しています。</p>
-                <p>☆５を熟知として独断で評価しています</p>
-            </div>
-            <div id="html"><img src="PNG/html.png" class="img"></div>
-            <div id="css"><img src="PNG/css.png" class="img"></div>
-            <div id="js"><img src="PNG/js.png" class="img"></div>
-            <div id="java"><img src="PNG/java.png" class="img"></div>
-            <div id="sql"><img src="PNG/sql.png" class="img"></div>
-            <div id="php"><img src="PNG/php.png" class="img"></div>
-            <div id="python"><img src="PNG/python.png" class="img"></div>
-            <div id="go"><img src="PNG/go.png" class="img"></div>
+        </section>
 
-            <div id="github"><img src="PNG/github.png" class="img"></div>
-            <div id="bootstrap"><img src="PNG/bs.png" class="img"></div>
-            <div id="vue"><img src="PNG/vue.png" class="img"></div>
-            <div id="react"><img src="PNG/react.png" class="img"></div>
-            <div id="springboot"><img src="PNG/sb.png" class="img"></div>
-            <div id="laravel"><img src="PNG/laravel.png" class="img"></div>
-            <div id="fastapi"><img src="PNG/fastapi.png" class="img"></div>
-            <div id="flask"><img src="PNG/flask.png" class="img"></div>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>プロフィール</h2>
+                        <p>こんにちは、上田匡成です。ウェブ開発とデザインに情熱を持つクリエイターです。ユーザー体験を重視した革新的なソリューションを生み出すことに喜びを感じています。</p>
+                        <p>麻生情報ビジネス専門学校福岡校の3年生として、日々新しい技術を学び、成長を続けています。趣味は開発、ドラム、野球観戦、ゲームです。</p>
+                        <p>所属団体：STECH 代表</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="/PNG/ueda.png" alt="上田匡成のプロフィール写真">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>スキル</h2>
+                <div class="skill-grid">
+                    <div class="skill-item">
+                        <h3>HTML</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>CSS</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>JavaScript</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Java</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="3"></div>
+                        </div>
+                        <span class="skill-score">3/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>SQL</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>PHP</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Laravel</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="2"></div>
+                        </div>
+                        <span class="skill-score">2/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Python</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="3"></div>
+                        </div>
+                        <span class="skill-score">3/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Go</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="0"></div>
+                        </div>
+                        <span class="skill-score">0/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>GitHub</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Bootstrap</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="3"></div>
+                        </div>
+                        <span class="skill-score">3/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Vue.js</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>React</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Next.js</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Tailwind CSS</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Firebase</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Generative AI</h3>
+                        <div class="skill-meter">
+                            <div class="skill-level" data-level="4"></div>
+                        </div>
+                        <span class="skill-score">4/5</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>プロジェクト</h2>
+                <div class="scrollable-section">
+                    <div class="project-item">
+                        <h3>InfinityTower</h3>
+                        <p>技育展 最優秀賞受賞作品</p>
+                        <p><a href="https://infinitytower.sakura.ne.jp/" target="_blank">プロジェクトリンク</a></p>
+                    </div>
+                    <div class="project-item">
+                        <h3>CssLabo</h3>
+                        <p>福岡EDDハッカソン作品</p>
+                        <p><a href="https://protopedia.net/prototype/3431" target="_blank">プロジェクトリンク</a></p>
+                    </div>
+                    <div class="project-item">
+                        <h3>♡のカレンダー</h3>
+                        <p><a href="https://strong-toffee-42101a.netlify.app/" target="_blank">プロジェクトリンク</a></p>
+                    </div>
+                    <div class="project-item">
+                        <h3>やにめもりー</h3>
+                        <p>技育CAMP努力賞・技育CAMPアドバンス企業賞受賞作品</p>
+                        <p><a href="https://zingy-profiterole-accecf.netlify.app/" target="_blank">プロジェクトリンク</a></p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Black Boss</h3>
+                        <p>HTML5アワード技術賞受賞作品</p>
+                        <p><a href="https://zingy-profiterole-accecf.netlify.app/" target="_blank">プロジェクトリンク</a></p>
+                    </div>
+                    <div class="project-item">
+                        <h3>TODOコネクト</h3>
+                        <p><a href="https://candid-zuccutto-3151b7.netlify.app/" target="_blank">プロジェクトリンク</a></p>
+                    </div>
+                    <div class="project-item">
+                        <h3>コードコネクト</h3>
+                        <p><a href="https://twitter.com/geek_pjt/status/1639931058065121282?s=20" target="_blank">プロジェクト情報</a></p>
+                    </div>
+                    <div class="project-item">
+                        <h3>あなたもメロス</h3>
+                        <p><a href="https://matiawaseapp.vercel.app/map" target="_blank">プロジェクトリンク</a></p>
+                    </div>
+                    <div class="project-item">
+                        <h3>支援金Navi</h3>
+                        <p><a href="https://my-shienkin-navi-67cc2.web.app/" target="_blank">プロジェクトリンク</a></p>
+                    </div>
+                    <div class="project-item">
+                        <h3>博多フリッパー</h3>
+                        <p><a href="http://learning-sql.kikirara.jp/start.html" target="_blank">プロジェクトリンク</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <h2>資格・賞歴</h2>
+                <div class="scrollable-section">
+                    <div class="cert-item">
+                        <h3>技育CAMPアドバンスvol.2 企業賞「DeNA賞」受賞</h3>
+                        <p>受賞日: 2023年6月24日</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>技育CAMP vol.4 企業賞「エン・ジャパン賞」受賞</h3>
+                        <p>受賞日: 2023年6月4日</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>起業イベント「荒波」企業賞「CUEBiC賞」受賞</h3>
+                        <p>受賞日: 2023年6月3日</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>マイナポータルハッカソン第1次予選通過</h3>
+                        <p>日付: 2023年5月21日</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>技育CAMP vol.2 努力賞受賞</h3>
+                        <p>受賞日: 2023年4月15日</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>技育CAMP vol.1 努力賞受賞</h3>
+                        <p>受賞日: 2023年3月26日</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>技育CAMPアドバンス vol.1 企業賞受賞</h3>
+                        <p>受賞日: 2023年3月4日</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>校内Atcoderプログラミングコンテスト 1位</h3>
+                        <p>日付: 2023年2月10日</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>HTML5アワード 技術賞受賞</h3>
+                        <p>受賞日: 2023年2月1日</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>技育展 開発経験1年未満部門 最優秀賞受賞</h3>
+                        <p>受賞日: 2022年9月23日</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>技育展 予選通過</h3>
+                        <p>日付: 2022年8月</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>Javaプログラミング能力認定試験2級 合格</h3>
+                        <p>取得日: 2022年8月</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>校内SQLスキルコンテスト 学年1位</h3>
+                        <p>日付: 2022年7月</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>応用情報技術者試験 合格</h3>
+                        <p>取得日: 2022年4月</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>HTML5アワード アシアル賞受賞</h3>
+                        <p>受賞日: 2022年1月</p>
+                    </div>
+                    <div class="cert-item">
+                        <h3>基本情報技術者試験 合格</h3>
+                        <p>取得日: 2021年10月</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="activities">
+            <div class="container">
+                <h2>活動実績</h2>
+                <div class="scrollable-section">
+                    <div class="activity-item">
+                        <h3>技育CAMPアドバンスvol.2 参加</h3>
+                        <p>日付: 2023年6月24日</p>
+                        <p>成果: 企業賞「DeNA賞」受賞</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>技育CAMPキャラバン@福岡 参加</h3>
+                        <p>日付: 2023年6月17日</p>
+                        <p>成果: matter.jsを使用して開発</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>マイナポータルハッカソン出場</h3>
+                        <p>日付: 2023年6月12日</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>サイバーエージェントJOB型インターン参加</h3>
+                        <p>期間: 2023年6月7日 〜 6月30日</p>
+                        <p>所属: CAM</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>技育CAMP vol.4 参加</h3>
+                        <p>日付: 2023年6月4日</p>
+                        <p>成果: 企業賞「エン・ジャパン賞」受賞</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>起業イベント「荒波」参加</h3>
+                        <p>日付: 2023年6月3日</p>
+                        <p>成果: 企業賞「CUEBiC賞」受賞</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>マイナポータルハッカソン第1次予選通過</h3>
+                        <p>日付: 2023年5月21日</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>起業イベント「荒波」参加</h3>
+                        <p>日付: 2023年5月7日</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>技育CAMP vol.2 参加</h3>
+                        <p>日付: 2023年4月15日</p>
+                        <p>成果: 努力賞受賞</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>技育CAMP vol.1 参加</h3>
+                        <p>日付: 2023年3月26日</p>
+                        <p>成果: 努力賞受賞</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>技育CAMPアドバンス vol.1 参加</h3>
+                        <p>日付: 2023年3月4日</p>
+                        <p>成果: 企業賞受賞</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>Yahoo OpenHackU 参加</h3>
+                        <p>日付: 2023年2月25日</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>校内Atcoderプログラミングコンテスト</h3>
+                        <p>日付: 2023年2月10日</p>
+                        <p>成果: 1位</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>HTML5アワード 出展</h3>
+                        <p>日付: 2023年2月1日</p>
+                        <p>成果: 技術賞受賞</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>STECH クリスマスハッカソン</h3>
+                        <p>日付: 2022年12月</p>
+                        <p>成果: 優勝</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>技育CAMP 参加</h3>
+                        <p>日付: 2022年12月11日</p>
+                        <p>成果: Vue3を使用して開発</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>福岡EDDハッカソン 出展</h3>
+                        <p>日付: 2022年10月10日</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>GMOインターンシップ</h3>
+                        <p>日付: 2022年09月5日</p>
+                        <p>内容: webアプリケーション開発コース参加</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>ヤフー主催ハッカソン参加</h3>
+                        <p>日付: 2022年04月</p>
+                    </div>
+                    <div class="activity-item">
+                        <h3>ヤフー主催ハッカソン参加</h3>
+                        <p>日付: 2021年08月</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 上田匡成. All rights reserved.</p>
         </div>
-        <div class="gap"></div>
-        <h2><span>活動経歴</span></h2>
-        <div class="center">※スクロールできます</div>
-        <div class="history">
-            <p><a class="new">new!</a>2023年6月24日 : 技育CAMPアドバンスvol.2　企業賞「DeNA賞」受賞<br><a target="_blank"
-                href="https://matiawaseapp.vercel.app/map">作品情報はこちら</a><span>　</span><span
-                class="br"><br></span></p>
-            <p><a class="new">new!</a>2023年6月17日 : 技育CAMPキャラバン@福岡　参加　matter.jsを使用して開発<br><a target="_blank"
-                href="http://learning-sql.kikirara.jp/start.html">作品情報はこちら</a><span>　</span><span
-                class="br"><br></span></p>
-            <p><a class="new">new!</a>2023年6月12日 : マイナポータルハッカソン出場<br><a target="_blank"
-                href="https://my-shienkin-navi-67cc2.web.app/">作品情報はこちら</a><span>　</span><span
-                class="br"><br></span></p>
-            <p><a class="new">new!</a>2023年6月7日 ~ 6月30日 : サイバーエージェントJOB型インターン　所属：CAM<br><span>　</span><span
-                class="br"><br></span></p>
-            <p><a class="new">new!</a>2023年6月4日 : 技育CAMP vol.4　企業賞「エン・ジャパン賞」　受賞<br><a target="_blank"
-                href="">作品情報はこちら</a><span>　</span><span
-                class="br"><br></span></p>
-            <p><a class="new">new!</a>2023年6月3日 : 起業イベント「荒波」で企業賞「CUEBiC賞」受賞<br><a target="_blank"
-                href="">作品情報はこちら</a><span>　</span><span
-                class="br"><br></span></p>
-            <p><a class="new">new!</a>2023年5月21日 : マイナポータルハッカソン第1次予選通過<br><a target="_blank"
-                href="">イベント概要はこちら</a><span>　</span><span
-                class="br"><br></span></p>
-                <!-- TODO:マイナポータルのリンクを追加する -->
-            <p><a class="new">new!</a>2023年5月7日 : 起業イベント「荒波」に参加<br><a target="_blank"
-                href="https://svmeetup.connpass.com/event/277974/">イベント概要はこちら</a><span>　</span><span
-                class="br"><br></span></p>
-            <p><a class="new">new!</a>2023年4月15日 : 技育CAMP vol.2　努力賞　受賞<br><a target="_blank"
-                href="https://matiawaseapp.vercel.app/map">作品情報はこちら：あなたもメロス</a><span>　</span><span
-                class="br"><br></span></p>
-            <p>2023年3月26日 : 技育CAMP vol.1　努力賞　受賞<br><a target="_blank"
-                href="https://twitter.com/geek_pjt/status/1639931058065121282?s=20">作品情報はこちら：コードコネクト</a><span>　</span><span
-                class="br"><br></span></p>
-            <p>2023年3月4日 : 技育CAMPアドバンス vol.1　企業賞　受賞<br><a target="_blank"
-                href="https://zingy-profiterole-accecf.netlify.app/">作品はこちら：やにめもりー</a><span>　</span><span
-                class="br"><br></span><a
-                href="https://qiita.com/kyuriosu/items/b974e40b12d7869646ca">議事録はこちら</a></p>
-            <p>2023年2月25日 : Yahoo OpenHackU 参加<br><a target="_blank"
-                href="https://candid-zuccutto-3151b7.netlify.app/">作品はこちら：TODOコネクト</a></p>
-            <p>2023年2月10日 : 校内Atcoderプログラミングコンテスト １位</p>
-            <p>2023年2月1日 : HTML5アワード　技術賞　受賞<br><a target="_blank"
-                href="https://warm-puppy-2c306b.netlify.app/">作品はこちら：Black BOSS</a><span>　</span><span
-                class="br"><br></span><a
-                href="https://qiita.com/kyuriosu/items/62de9b4647188fcafd5a">議事録はこちら</a></p>
-            <p>2022年12月11日 : 技育CAMP 努力賞 Vue3を使用し開発<br><a target="_blank"
-                href="https://zingy-profiterole-accecf.netlify.app/">作品はこちら：やにめもりー</a><span>　</span><span
-                class="br"><br></span><a href="https://qiita.com/kyuriosu/items/037c4008bb32d1d296df">議事録はこちら</a>
-            </p>
-            <p>2022年8月 : STECH クリスマスハッカソン　優勝<br><a target="_blank"
-                href="https://zingy-profiterole-accecf.netlify.app/">githubはこちら</a></p>
-            <p>2022年12月11日 : 技育CAMP 参加 Vue3を使用し開発<br><a target="_blank"
-                    href="https://strong-toffee-42101a.netlify.app/">作品はこちら：♡のカレンダー</a><span>　</span><span
-                    class="br"><br></span><a href="https://qiita.com/kyuriosu/items/ba6632d6c3787186ab9a">議事録はこちら</a>
-            </p>
-            <p>STECH 代表　就任<a target="_blank"
-                    href="https://stech.careerselect.jp/">STECHのリンクはこちら</a></p>
-            <p>趣味：開発・ドラム</p>
-            <p>2022年10月10日 : 福岡EDDハッカソン　出展<br><a target="_blank"
-                    href="https://protopedia.net/prototype/3431">作品はこちら：CSSLabo</a></p>
-            <p><a class="new">appeal!</a>2022年09月23日 : 技育展　開発経験１年未満部門　最優秀賞　受賞</p>
-            <p>2022年09月5日 : GMOインターンシップ　webアプリケーション開発コース　参加</p>
-            <p>2022年08月 : 技育展　出展　予選通過</p>
-            <p>2022年04月 : ヤフー主催　ハッカソン参加</p>
-            <p>2022年04月 : 応用情報技術者試験　合格</p>
-            <p>2022年01月 : HTML5アワード　出展　受賞</p>
-            <p>2021年10月 : 基本情報技術者試験　合格</p>
-            <p>2021年08月 : ヤフー主催　ハッカソン参加</p>
-        </div>
-        <div class="gap"></div>
-        <h2><span>ミニ活動経歴</span></h2>
-        <div class="center">※スクロールできます</div>
-        <div class="history">
-            <p>2023年5月7日 : Docker環境構築練習　Next.js・PHP・MySQL・phpMyAdmin・nginx</p>
-            <p>2022年2月3日 : Matter.jsを学習し、自作球落としゲームを作成、デプロイまで<br><a target="_blank"
-                    href="https://rad-mousse-88cfe5.netlify.app/">作品はこちら</a></p>
-            <p>2022年12月16日 : 半年に及ぶ学校のチーム開発(7人)結果発表会　使用技術 HTML,CSS,JS(jQuery),PHP,MySQL</p>
-            <p>2022年11月20日 : Reactを使いコロナトラッカーアプリを作成、デプロイまで<br><a target="_blank"
-                    href="https://elaborate-lamington-846c04.netlify.app/">作品はこちら</a></p>
-            <p>2022年10月24日 : Reactを使いウェザーアプリを作成、デプロイまで<br><a target="_blank"
-                    href="https://splendorous-ganache-d8237c.netlify.app/">作品はこちら</a></p>
-            <p>2022年10月22日 : Vueを使いウェザーアプリを作成、デプロイまで<br><a target="_blank"
-                    href="https://polite-pasca-765838.netlify.app/">作品はこちら</a></p>
-            <p>2022年10月 : Qiitaにて技育展の議事録追加</p>
-        </div>
-        <div class="gap"></div>
-        <h2><span>更新履歴</span></h2>
-        <div class="updatehistory">
-            <p><a class="new">new!</a>2023年6月4日　技育CAMPvol4で企業賞「エン・ジャパン賞」受賞の情報追加</p>
-            <p><a class="new">new!</a>2023年6月3日　起業イベント「荒波」で企業賞「CUEBiC賞」受賞の情報追加</p>
-            <p><a class="new">new!</a>2023年5月21日　マイナポータルハッカソン第1次予選通過の情報追加</p>
-            <p><a class="new">new!</a>2023年5月7日　Docker環境構築練習の情報追加</p>
-            <p><a class="new">new!</a>2023年5月7日　起業イベント「荒波」の情報追加</p>
-            <p><a class="new">new!</a>2023年4月15日　技育CAMPvol2で努力賞受賞の情報追加</p>
-            <p><a class="new">new!</a>2023年3月26日　技育CAMPvol1の情報追加</p>
-            <p>2023年3月7日　技育CAMPアドバンスとYahooOpenHackUの情報追加</p>
-            <p>2023年2月10日　校内Atcoderプログラミングコンテスト1位の情報追加</p>
-            <p>2023年2月1日　HTML5アワードで技術賞を受賞した「Black BOSS」についての情報追加</p>
-            <p>2023年1月29日　技育CAMPで努力賞を受賞した「やにめもりー」についての情報追加</p>
-            <p>STECH 代表　就任情報追加<a target="_blank"
-                    href="https://stech.careerselect.jp/">https://stech.careerselect.jp/</a></p>
-            <p>2023年2月21日　STECH開催のクリスマスハッカソンで優勝した際の情報追加</p>
-            <p>2022年12月16日　技育CAMPに参加したことについて記したQiitaの情報追加</p>
-            <p>2022年12月16日　学校のチーム開発の情報追加</p>
-            <p>2022年12月11日　技育CAMPに参加した際に開発した「♡のカレンダー」についての情報追加</p>
-            <p>STECH 代表　就任情報追加<a target="_blank"
-                    href="https://stech.careerselect.jp/">https://stech.careerselect.jp/</a></p>
-            <p>趣味：開発・ドラム</p>
-            <p>2022年11月20日　Reactを使い作成したコロナトラッカーReactを使い作成したウェザーアプリ情報追加アプリ情報追加</p>
-            <p>2022年10月25日　言語・フレームワーク情報更新</p>
-            <p>2022年10月24日　Reactを使い作成したウェザーアプリ情報追加</p>
-            <p>2022年10月23日　リンクを別のタブで開くように変更</p>
-            <p>2022年10月22日　Vueを使い作成したウェザーアプリ情報追加</p>
-            <p>2022年10月10日　福岡EDDハッカソン出展詳細等追加</p>
-            <p>2022年10月5日　Qiitaで書いた技育展の議事録URL追加</p>
-            <p>2022年09月23日　レスポンシブに対応</p>
-            <p>2022年09月21日　作成</p>
-        </div>
-        <div class="gap"></div>
-        <div class="update">
-            <p>Create By HTML,CSS</p>
-        </div>
-    </div>
+    </footer>
+
+    <!-- Three.jsライブラリの読み込み -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- 3Dアニメーションのための JavaScript -->
+<script>
+    // Three.js シーンのセットアップ
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('hero-canvas'), antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    // パーティクルの作成
+    const particlesGeometry = new THREE.BufferGeometry();
+    const particlesCount = 5000;
+    const posArray = new Float32Array(particlesCount * 3);
+
+    for (let i = 0; i < particlesCount * 3; i++) {
+        posArray[i] = (Math.random() - 0.5) * 5;
+    }
+
+    particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+
+    const particlesMaterial = new THREE.PointsMaterial({
+        size: 0.005,
+        color: 0xffffff
+    });
+
+    const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+    scene.add(particlesMesh);
+
+    camera.position.z = 2;
+
+    // マウス操作による視点変更
+    let mouseX = 0;
+    let mouseY = 0;
+
+    document.addEventListener('mousemove', (event) => {
+        mouseX = event.clientX / window.innerWidth - 0.5;
+        mouseY = event.clientY / window.innerHeight - 0.5;
+    });
+
+    // アニメーションループ
+    function animate() {
+        requestAnimationFrame(animate);
+
+        // パーティクルの回転
+        particlesMesh.rotation.x += 0.0001;
+        particlesMesh.rotation.y += 0.0001;
+
+        // マウス位置に応じたカメラの動き
+        camera.position.x += (mouseX * 0.5 - camera.position.x) * 0.05;
+        camera.position.y += (-mouseY * 0.5 - camera.position.y) * 0.05;
+        camera.lookAt(scene.position);
+
+        renderer.render(scene, camera);
+    }
+    animate();
+
+    // ウィンドウリサイズ時の処理
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+</script>
 </body>
-
 </html>
