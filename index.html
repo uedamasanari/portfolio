@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <nav class="nav-modern"> <!-- または nav-gradient, nav-boxed -->
+    <nav class="nav-modern"> 
         <div class="container">
             <div class="logo">上田匡成</div>
             <ul>
@@ -407,18 +407,14 @@
         </div>
     </footer>
 
-    <!-- Three.jsライブラリの読み込み -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-<!-- 3Dアニメーションのための JavaScript -->
 <script>
-    // Three.js シーンのセットアップ
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('hero-canvas'), antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
 
-    // パーティクルの作成
     const particlesGeometry = new THREE.BufferGeometry();
     const particlesCount = 5000;
     const posArray = new Float32Array(particlesCount * 3);
@@ -439,7 +435,6 @@
 
     camera.position.z = 2;
 
-    // マウス操作による視点変更
     let mouseX = 0;
     let mouseY = 0;
 
@@ -448,11 +443,9 @@
         mouseY = event.clientY / window.innerHeight - 0.5;
     });
 
-    // アニメーションループ
     function animate() {
         requestAnimationFrame(animate);
 
-        // パーティクルの回転
         particlesMesh.rotation.x += 0.0001;
         particlesMesh.rotation.y += 0.0001;
 
@@ -465,7 +458,6 @@
     }
     animate();
 
-    // ウィンドウリサイズ時の処理
     window.addEventListener('resize', () => {
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
